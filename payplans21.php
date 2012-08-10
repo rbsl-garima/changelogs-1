@@ -1,3 +1,19 @@
+<h2>PayPlans 2.1.4.2813 (09-08-2012)<br></h2><p><b>Bug Fixes</b></p><ul>
+<li>"Xitext" element is added in Payplans. It can be used in  Subscription  detail app and User detail app for Patter Matching  validation in Text  Box.</li>
+<li>Support for Kunena 2.0 is added in Kunena App.</li>
+<li>Upgraded  to params is added in previous order, so that Upgraded orders can be  identified and patch is created to store "upgraded_to" param for old  orders. Patch is created to change "upgrading_from" param from key to  id. </li>
+<li>Patch for using unused balance is added. Due to a bug  in Unlimited  Recurring Subscription, there were some unused balance in  users' wallet.</li>
+<li>Bug fixed in menu access and module access app. Now we can save app without selecting any menu.</li>
+<li>Bug fixed in backend Dashboard Charts (fix encoding issue).</li>
+<li>Routing issue of multilingual menus in Joomla 2.5 is fixed.</li>
+<li>'&amp;' issue fixed in xml of user-detail and subscription details app.</li>
+<li>Display subscription in reverse order(latest on top) in subscription module.</li>
+<li>Logging issue fixed when successful invoice link is sent and in MailChiamp App.</li>
+<li>Added icon for reports tab.</li>
+</ul>
+
+
+
 <h2>PayPlans 2.1.1.2764 (Stable)<br></h2><p><b>Features Introduced &amp; Tasks</b></p><ul><li>Plan modifier app is added.&nbsp;</li><li>Send invoice link code is added in invoice link.</li><li>Remove joomla word from javascript files to remove dependencies on Joomla and increse security.</li><li>Displayed non-taxable and discountable amount and modifiy layout in pdfinvoice.</li><li>Setup the broadcast.html on S3, which will be displayed on every dashboard in backend.</li><li>Added task in invoice controller for statushelp.</li><li>Change sequence of displaying Order, Now showing latest order at top in front end dashboard.</li><li>
 Subscription table is modified, user_id field is indexed here. <br></li><li>Trigger onPayplansNewPaymentRequest when wait for payment is set to 0 and subscription is active.</li><li>Provide an option in parent-child so as to remove the conflict when user upgrades to another plan.</li></ul><p>
 <b>Bugs and Fixes</b></p><ul><li>Template of front-end invoice is updated.</li><li>XML Parsing Error at Front-End is fixed.</li><li>Handle warnning level (PayPlans Installer)</li><li>Bug fixed for authorize.net, now showing august month.</li><li>Improve Timer element at backend.</li><li>Proper restructured the code of payplans dashboard.</li><li>Bug fixed in php tag in dashboard template.</li><li>Changed currency position for back-end.</li><li>Bug fixed in upgrade app when olan is un-published.</li><li>Bug fixed : Total Discount is applied more than the total amount.</li><li>Bug fixed in transaction of free subscription from back-end.</li><li>Bug fixed : now subscription will not be saved without plan.</li><li>Proper alignment of subscribe now button and plan modifiers selectbox.</li><li>Bug fixed for invoice layout. now border of modifier table displays properly in J1.5 also.</li><li>Logs of group was not saving if there are some change in only its child plans.</li><li>Now user has to select registration link two times, will modify it in next release.</li><li>Subscription page added in content app. <br></li><li>Now using PayplansHtml instead of XiHtml.</li><li>Raise warning message when trying to give xml param name as one of the default params of subscription,in subscription detail app.</li><li>Bug fixed for joomla registration plugin with SEF Url.<br><br></li></ul>
